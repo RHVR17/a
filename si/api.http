@@ -1,0 +1,38 @@
+### 
+GET http://localhost:3000/peliculas
+
+### 
+GET http://localhost:3000/pelicula/7e3fd5ab-60ff-4ae2-92b6-9597f0308d1
+
+### 
+POST http://localhost:3000/pelicula
+Content-Type: application/json
+
+{
+ "title": "Honduras",
+  "year": 2002,
+  "director": "Luis Ortega",
+  "duration": 160,
+  "poster": "https://sirse.info/wp-content/uploads/2015/05/cine541x311-800x500_c.jpg",
+  "genre": ["Drama", "Action"],
+  "rate": 5.6
+  
+
+}
+
+### 
+PUT http://localhost:3000/pelicula/7e3fd5ab-60ff-4ae2-92b6-9597f0308d1
+Content-Type: application/json
+
+{
+  "title": "Centroamerica",
+  "year": 2023,
+  "director": "Saul Martinez",
+  "duration": 111,
+  "poster": "https://media.gettyimages.com/id/1414039726/es/foto/empty-theater-red-seats.jpg?s=612x612&w=gi&k=20&c=yWYYna94SAqQioUGZ19yji5dv8OaBU73UTXPW3TRi-g=",
+  "genre": ["Accion"],
+  "rate": 1
+}
+
+### 
+DELETE http://localhost:3000/pelicula/7e3fd5ab-60ff-4ae2-92b6-9597f0308d1
